@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import logo from "@/assets/PDC_Logo_Stacked.png";
 
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-hero-gradient overflow-hidden">
-      {/* Subtle grid overlay */}
       <div className="absolute inset-0 opacity-[0.03]" style={{
         backgroundImage: `linear-gradient(hsl(var(--foreground)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--foreground)) 1px, transparent 1px)`,
         backgroundSize: '60px 60px'
@@ -16,12 +16,13 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
+          <img src={logo} alt="Process Dream Company" className="h-24 md:h-32 mx-auto mb-10" />
           <p className="text-primary tracking-[0.3em] uppercase text-sm font-medium mb-8">
             Operations Advisory
           </p>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[0.95] mb-8">
             Turn Chaos<br />
-            <span className="text-gradient-gold">Into Clarity.</span>
+            <span className="text-gradient-brand">Into Clarity.</span>
           </h1>
         </motion.div>
 
@@ -49,14 +50,13 @@ const Hero = () => {
           </a>
           <a
             href="#about"
-            className="inline-flex items-center gap-2 border border-gold-strong text-foreground px-8 py-4 font-semibold tracking-wide text-sm uppercase hover:bg-secondary transition-colors rounded-sm"
+            className="inline-flex items-center gap-2 border border-brand-strong text-foreground px-8 py-4 font-semibold tracking-wide text-sm uppercase hover:bg-secondary transition-colors rounded-sm"
           >
             About the Firm
           </a>
         </motion.div>
       </div>
 
-      {/* Bottom fade */}
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
     </section>
   );
