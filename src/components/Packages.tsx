@@ -56,12 +56,12 @@ const Packages = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-card-gradient border border-gold rounded-sm p-8 md:p-10 hover:border-gold-strong transition-colors group glow-gold"
+              className="bg-card-gradient border border-brand rounded-sm p-8 md:p-10 hover:border-brand-strong transition-colors group glow-brand"
             >
               <pkg.icon className="w-6 h-6 text-primary mb-6" />
               <h3 className="text-xl font-bold mb-3 tracking-tight">{pkg.name}</h3>
               <p className="text-muted-foreground leading-relaxed mb-6">{pkg.description}</p>
-              <div className="border-t border-gold pt-4">
+              <div className="border-t border-brand pt-4">
                 <p className="text-sm text-primary font-medium tracking-wide uppercase">
                   {pkg.deliverable}
                 </p>

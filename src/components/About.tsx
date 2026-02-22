@@ -16,7 +16,7 @@ const About = () => {
           </p>
           <h2 className="text-4xl md:text-6xl font-bold tracking-tight mb-8">
             Execution Over Theory.<br />
-            <span className="text-gradient-gold">Structure Over Noise.</span>
+            <span className="text-gradient-brand">Structure Over Noise.</span>
           </h2>
           <div className="max-w-2xl mx-auto space-y-6">
             <p className="text-muted-foreground text-lg leading-relaxed">
@@ -29,14 +29,14 @@ const About = () => {
             </p>
           </div>
 
-          <div className="mt-16 grid grid-cols-3 gap-8 border-t border-gold pt-16">
+          <div className="mt-16 grid grid-cols-3 gap-8 border-t border-brand pt-16">
             {[
               { value: "200+", label: "Engagements Delivered" },
               { value: "15+", label: "Years of Experience" },
               { value: "98%", label: "Client Retention" },
             ].map((stat) => (
               <div key={stat.label}>
-                <p className="text-3xl md:text-4xl font-bold text-gradient-gold mb-2">{stat.value}</p>
+                <p className="text-3xl md:text-4xl font-bold text-gradient-brand mb-2">{stat.value}</p>
                 <p className="text-muted-foreground text-sm tracking-wide uppercase">{stat.label}</p>
               </div>
             ))}
