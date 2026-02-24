@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import Packages from "@/components/Packages";
 import Toolkits from "@/components/Toolkits";
 import About from "@/components/About";
+import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -13,6 +14,7 @@ const Index = () => {
       <Packages />
       <Toolkits />
       <About />
+      <Contact />
       <Footer />
     </div>
   );
