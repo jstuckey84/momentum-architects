@@ -16,7 +16,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}>
 
-          <img alt="Process Dream Company" className="h-24 md:h-32 mx-auto mb-10" src="/lovable-uploads/e1718b16-b103-488e-a1ac-6d0f3f9fe7d5.png" />
+          <img alt="Process Dream Company" className="h-40 md:h-56 lg:h-64 mx-auto mb-10" src="/lovable-uploads/e1718b16-b103-488e-a1ac-6d0f3f9fe7d5.png" />
           <p className="text-primary tracking-[0.3em] uppercase text-sm font-medium mb-8">
             Operations Advisory
           </p>
