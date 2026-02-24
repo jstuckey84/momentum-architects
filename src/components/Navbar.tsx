@@ -16,6 +16,7 @@ const Navbar = () => {
         <div className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
           <a href="#packages" className="hover:text-foreground transition-colors">Packages</a>
           <a href="#about" className="hover:text-foreground transition-colors">About</a>
+          <a href="#contact" className="hover:text-foreground transition-colors">Contact</a>
           <a
             href="mailto:hello@processdream.com"
             className="bg-primary text-primary-foreground px-5 py-2 rounded-sm font-semibold tracking-wide text-xs uppercase hover:opacity-90 transition-opacity"
@@ -33,6 +34,7 @@ const Navbar = () => {
         <div className="md:hidden border-t border-border px-6 py-4 flex flex-col gap-4 bg-background">
           <a href="#packages" onClick={() => setOpen(false)} className="text-muted-foreground hover:text-foreground text-sm">Packages</a>
           <a href="#about" onClick={() => setOpen(false)} className="text-muted-foreground hover:text-foreground text-sm">About</a>
+          <a href="#contact" onClick={() => setOpen(false)} className="text-muted-foreground hover:text-foreground text-sm">Contact</a>
           <a href="mailto:hello@processdream.com" className="bg-primary text-primary-foreground px-5 py-2 rounded-sm font-semibold tracking-wide text-xs uppercase text-center">
             Get in Touch
           </a>

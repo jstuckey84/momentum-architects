@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="flex gap-8 text-sm text-muted-foreground">
           <a href="#packages" className="hover:text-primary transition-colors">Packages</a>
           <a href="#about" className="hover:text-primary transition-colors">About</a>
-          <a href="mailto:hello@processdream.com" className="hover:text-primary transition-colors">Contact</a>
+          <a href="#contact" className="hover:text-primary transition-colors">Contact</a>
         </div>
         <p className="text-muted-foreground text-xs">
           © 2026 Process Dream Company. All rights reserved.
