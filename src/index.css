@@ -97,6 +97,10 @@
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   *,
   *::before,
   *::after {
