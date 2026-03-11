@@ -32,7 +32,7 @@ const About = () => {
           <div className="mt-16 grid grid-cols-2 gap-8 max-w-md mx-auto border-t border-brand pt-16">
             {[
               { value: "19+", label: "Years of Experience" },
-              { value: "$2.5M+", label: "In Client Cost Savings" },
+              { value: "$2.5M+", label: "In Cost Savings" },
             ].map((stat) => (
               <div key={stat.label}>
                 <p className="text-3xl md:text-4xl font-bold text-gradient-brand mb-2">{stat.value}</p>
