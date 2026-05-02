@@ -32,7 +32,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-12 leading-relaxed">
 
-          When operations stall, risk multiplies. We build structure that moves organizations forward.
+          When your team is stuck in follow-ups, rework, and unclear ownership, it's not a people problem—it's a process problem. We help you see what's actually happening—and fix it in a way that works.
         </motion.p>
 
         <motion.div
@@ -45,14 +45,14 @@ const Hero = () => {
             href="#packages"
             className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 font-semibold tracking-wide text-sm uppercase hover:opacity-90 transition-opacity rounded-sm">
 
-            Explore Our Work
+            Start with a Clarity Diagnostic
             <ArrowRight className="w-4 h-4" />
           </a>
           <a
-            href="#about"
+            href="#contact"
             className="inline-flex items-center gap-2 border border-brand-strong text-foreground px-8 py-4 font-semibold tracking-wide text-sm uppercase hover:bg-secondary transition-colors rounded-sm">
 
-            About the Firm
+            Schedule a Conversation
           </a>
         </motion.div>
       </div>

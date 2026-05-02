@@ -1,30 +1,45 @@
 import { motion } from "framer-motion";
-import { Search, Shield, Factory, Settings } from "lucide-react";
+import { Search, Settings, Handshake } from "lucide-react";
 
 const packages = [
   {
     icon: Search,
     name: "The Clarity Diagnostic™",
-    description: "A rapid operational assessment that identifies friction points, hidden risks, and structural gaps across your organization.",
-    deliverable: "Executive report with prioritized action plan",
-  },
-  {
-    icon: Shield,
-    name: "The Governance Blueprint™",
-    description: "A tailored governance framework designed to align decision-making, accountability, and compliance with your growth trajectory.",
-    deliverable: "Custom governance architecture & implementation roadmap",
-  },
-  {
-    icon: Factory,
-    name: "The Manufacturing Momentum Model™",
-    description: "Purpose-built for manufacturing leaders. We streamline production workflows, quality systems, and supply chain operations.",
-    deliverable: "End-to-end operational optimization playbook",
+    tagline:
+      "A focused operational assessment to identify where your processes are slowing down, breaking, or creating risk.",
+    deliverables: [
+      "Clear visibility into how work actually flows",
+      "Top breakdowns and friction points",
+      "A prioritized plan to fix what matters most",
+    ],
+    bestFor:
+      "Teams that feel stuck, reactive, or unclear on where the real issues are.",
+    note: "Most clients start here before moving into deeper work.",
   },
   {
     icon: Settings,
-    name: "The Small Business Operating System™",
-    description: "A complete operational backbone for growing businesses — from SOPs and team structure to financial controls and reporting.",
-    deliverable: "Turnkey operating system with templates & training",
+    name: "Process Breakdown → Rebuild",
+    tagline: "We take one critical process and fix it end-to-end.",
+    deliverables: [
+      "Root cause analysis—what's actually causing the problem",
+      "Redesigned workflow your team can follow",
+      "Built-in controls and ownership clarity",
+      "Simple KPIs to track performance",
+    ],
+    bestFor: "A specific process that's slowing everything down.",
+  },
+  {
+    icon: Handshake,
+    name: "Trusted Operations Advisor",
+    tagline:
+      "Ongoing support to help you continuously improve operations as your business grows.",
+    deliverables: [
+      "Monthly deep dives",
+      "Real-time problem solving",
+      "Process and risk guidance",
+      "Decision support when things get complex",
+    ],
+    bestFor: "Leaders who want a trusted partner, not just a one-time project.",
   },
 ];
 
@@ -40,15 +55,18 @@ const Packages = () => {
           className="mb-20"
         >
           <p className="text-primary tracking-[0.3em] uppercase text-sm font-medium mb-4">
-            Advisory Packages
+            How To Work With Us
           </p>
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
-            Proprietary Frameworks.<br />
-            <span className="text-muted-foreground">Proven Results.</span>
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
+            Start Where It<br />
+            <span className="text-muted-foreground">Makes Sense.</span>
           </h2>
+          <p className="text-muted-foreground text-lg max-w-2xl leading-relaxed">
+            Every business is different—but most clients start in one of three places.
+          </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-3 gap-6">
           {packages.map((pkg, index) => (
             <motion.div
               key={pkg.name}
@@ -56,15 +74,35 @@ const Packages = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-card-gradient border border-brand rounded-sm p-8 md:p-10 hover:border-brand-strong transition-colors group glow-brand"
+              className="bg-card-gradient border border-brand rounded-sm p-8 md:p-10 hover:border-brand-strong transition-colors group glow-brand flex flex-col"
             >
               <pkg.icon className="w-6 h-6 text-primary mb-6" />
               <h3 className="text-xl font-bold mb-3 tracking-tight">{pkg.name}</h3>
-              <p className="text-muted-foreground leading-relaxed mb-6">{pkg.description}</p>
-              <div className="border-t border-brand pt-4">
-                <p className="text-sm text-primary font-medium tracking-wide uppercase">
-                  {pkg.deliverable}
+              <p className="text-muted-foreground leading-relaxed mb-6">{pkg.tagline}</p>
+
+              <ul className="space-y-2 mb-6 flex-1">
+                {pkg.deliverables.map((d) => (
+                  <li
+                    key={d}
+                    className="text-sm text-foreground/90 leading-relaxed pl-4 relative before:content-['→'] before:absolute before:left-0 before:text-primary"
+                  >
+                    {d}
+                  </li>
+                ))}
+              </ul>
+
+              <div className="border-t border-brand pt-4 space-y-2">
+                <p className="text-xs text-primary font-medium tracking-wide uppercase">
+                  Best for
                 </p>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  {pkg.bestFor}
+                </p>
+                {pkg.note && (
+                  <p className="text-xs text-muted-foreground/80 italic pt-2">
+                    {pkg.note}
+                  </p>
+                )}
               </div>
             </motion.div>
           ))}

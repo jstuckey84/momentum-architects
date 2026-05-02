@@ -36,7 +36,7 @@ const Toolkits = () => {
           className="mb-20"
         >
           <p className="text-primary tracking-[0.3em] uppercase text-sm font-medium mb-4">
-            Digital Products
+            Tools & Templates
           </p>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
             Operational Toolkits<br />
