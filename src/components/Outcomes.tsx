@@ -25,7 +25,7 @@ const Outcomes = () => {
           </p>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
             What This<br />
-            <span className="text-gradient-brand">Actually Changes.</span>
+            <span className="text-gradient-brand">Changes.</span>
           </h2>
         </motion.div>
 

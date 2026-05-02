@@ -23,12 +23,17 @@ const About = () => {
               This isn't traditional consulting.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              I've spent years working inside organizations—identifying where processes break
-              down, where risk shows up, and why teams struggle to execute.
+              Most teams don't have a strategy problem. They have work happening every day
+              that no one has clearly stepped back and fixed.
+            </p>
+            <p className="text-muted-foreground text-lg leading-relaxed">
+              I've spent years working inside complex operational environments—identifying
+              where processes break down, where operational risk builds, and why teams
+              struggle to execute.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed">
               Process Dream Company was built to bring that same level of clarity to
-              businesses without the bureaucracy.
+              businesses—without the bureaucracy.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed">
               Every engagement is designed to leave your operations clearer, faster, more
@@ -46,6 +51,18 @@ const About = () => {
                 <p className="text-muted-foreground text-sm tracking-wide uppercase">{stat.label}</p>
               </div>
             ))}
+          </div>
+
+          <div className="max-w-2xl mx-auto space-y-6 mt-16 text-left md:text-center">
+            <p className="text-muted-foreground text-lg leading-relaxed">
+              From process breakdowns to operational risk gaps, I've seen how small issues
+              compound into bigger problems—and how quickly things improve once they're
+              fixed the right way.
+            </p>
+            <p className="text-muted-foreground text-lg leading-relaxed">
+              Experience working inside complex, high-risk operational environments where
+              breakdowns directly impact performance, timelines, and customer experience.
+            </p>
           </div>
         </motion.div>
       </div>

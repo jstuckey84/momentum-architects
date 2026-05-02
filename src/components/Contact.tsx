@@ -70,8 +70,9 @@ const Contact = () => {
             <span className="text-gradient-brand">Conversation.</span>
           </h2>
           <p className="text-muted-foreground max-w-lg mx-auto leading-relaxed">
-            What's not working in your operations right now? Tell me a little about what
-            you're dealing with, and we'll take it from there.
+            Most clients start with a Clarity Diagnostic to quickly identify what's not
+            working and where to focus first. If something in your operations feels off,
+            tell me what's going on — we'll figure out the next step.
           </p>
         </motion.div>
 
@@ -125,7 +126,7 @@ const Contact = () => {
           <div>
             <textarea
               name="message"
-              placeholder="Tell us about your challenge… *"
+              placeholder="What's not working in your operations right now? *"
               rows={5}
               value={form.message}
               onChange={handleChange}
@@ -140,7 +141,7 @@ const Contact = () => {
             disabled={submitting}
             className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 font-semibold tracking-wide text-sm uppercase hover:opacity-90 transition-opacity rounded-sm disabled:opacity-50"
           >
-            {submitting ? "Sending…" : "Start the Conversation"}
+            {submitting ? "Sending…" : "Send Message"}
             <Send className="w-4 h-4" />
           </button>
         </motion.form>
