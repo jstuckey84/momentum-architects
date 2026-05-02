@@ -1,9 +1,17 @@
 import { motion } from "framer-motion";
 
+const symptoms = [
+  "constant follow-ups",
+  "work getting stuck",
+  "things falling through the cracks",
+  "inconsistent handling of the same request",
+];
+
 const issues = [
-  "Unclear ownership",
-  "Broken or inconsistent processes",
-  "Hidden risks that no one has fully mapped out",
+  "unclear ownership",
+  "broken or inconsistent processes",
+  "too many handoffs",
+  "lack of visibility into how work actually flows",
 ];
 
 const WhatWeDo = () => {
@@ -20,15 +28,21 @@ const WhatWeDo = () => {
             What We Do
           </p>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-10">
-            Fix What's Slowing<br />
-            <span className="text-gradient-brand">Your Business Down.</span>
+            Identify What's Breaking<br />
+            <span className="text-gradient-brand">— Then Fix It.</span>
           </h2>
 
           <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
-            <p>
-              Most operational problems aren't obvious. They show up as delays, confusion,
-              rework, and constant follow-ups.
-            </p>
+            <p>Most operational problems aren't obvious. They show up as:</p>
+
+            <ul className="space-y-3 border-l-2 border-brand-strong pl-6">
+              {symptoms.map((s) => (
+                <li key={s} className="text-foreground">
+                  {s}
+                </li>
+              ))}
+            </ul>
+
             <p>Underneath that, there are usually a few core issues:</p>
 
             <ul className="space-y-3 border-l-2 border-brand-strong pl-6">
@@ -40,8 +54,8 @@ const WhatWeDo = () => {
             </ul>
 
             <p>
-              We help you identify those issues quickly—and fix them in a way your team can
-              actually execute.
+              I focus on operational risk — the breakdowns in how work is executed that lead
+              to delays, errors, and unnecessary exposure.
             </p>
           </div>
         </motion.div>

@@ -6,8 +6,9 @@ import { useActiveSection } from "@/hooks/use-active-section";
 import { cn } from "@/lib/utils";
 
 const NAV_LINKS = [
-  { id: "what-we-do", label: "What We Do" },
-  { id: "packages", label: "Work With Us" },
+  { id: "where-i-focus", label: "Focus" },
+  { id: "what-we-do", label: "What I Do" },
+  { id: "packages", label: "Work With Me" },
   { id: "how-i-work", label: "Approach" },
   { id: "about", label: "About" },
   { id: "contact", label: "Contact" },

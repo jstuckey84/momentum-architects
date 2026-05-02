@@ -4,16 +4,16 @@ import { Search, Settings, Handshake } from "lucide-react";
 const packages = [
   {
     icon: Search,
-    name: "The Clarity Diagnostic™",
+    name: "Clarity Diagnostic",
     tagline:
-      "A focused operational assessment to identify where your processes are slowing down, breaking, or creating risk.",
+      "A focused assessment to pinpoint where your operations are slowing down, breaking, or creating operational risk.",
     deliverables: [
       "Clear visibility into how work actually flows",
-      "Top breakdowns and friction points",
+      "The biggest breakdowns and friction points",
       "A prioritized plan to fix what matters most",
     ],
     bestFor:
-      "Teams that feel stuck, reactive, or unclear on where the real issues are.",
+      "Financial operations teams and call centers that are constantly putting out fires and struggling to pinpoint where things are breaking down.",
     note: "Most clients start here before moving into deeper work.",
   },
   {
@@ -22,11 +22,12 @@ const packages = [
     tagline: "We take one critical process and fix it end-to-end.",
     deliverables: [
       "Root cause analysis—what's actually causing the problem",
-      "Redesigned workflow your team can follow",
-      "Built-in controls and ownership clarity",
+      "A redesigned workflow your team can follow",
+      "Built-in process controls and ownership clarity",
       "Simple KPIs to track performance",
     ],
-    bestFor: "A specific process that's slowing everything down.",
+    bestFor:
+      "A specific workflow that's slowing execution or creating repeated issues.",
   },
   {
     icon: Handshake,
@@ -36,10 +37,10 @@ const packages = [
     deliverables: [
       "Monthly deep dives",
       "Real-time problem solving",
-      "Process and risk guidance",
+      "Process and operational risk guidance",
       "Decision support when things get complex",
     ],
-    bestFor: "Leaders who want a trusted partner, not just a one-time project.",
+    bestFor: "Leaders who want a trusted partner—not just a one-time project.",
   },
 ];
 
@@ -55,7 +56,7 @@ const Packages = () => {
           className="mb-20"
         >
           <p className="text-primary tracking-[0.3em] uppercase text-sm font-medium mb-4">
-            How To Work With Us
+            Ways To Work Together
           </p>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
             Start Where It<br />

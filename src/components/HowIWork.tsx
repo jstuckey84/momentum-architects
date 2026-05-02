@@ -18,19 +18,28 @@ const HowIWork = () => {
           </h2>
 
           <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
+            <p>I don't come in with a playbook and force it on your business.</p>
             <p>
-              I don't come in with a playbook and force it on your business.
+              I start by understanding how work actually gets done—not how it's supposed to
+              work on paper.
             </p>
-            <p>
-              I start by understanding how things actually work day to day—where things slow
-              down, where confusion happens, and where risk is hiding.
-            </p>
-            <p>
-              Then we fix it in a way that your team can actually run with.
-            </p>
+            <p>That's where the real issues show up:</p>
+            <ul className="space-y-3 border-l-2 border-brand-strong pl-6">
+              {[
+                "work getting stuck",
+                "too many handoffs",
+                "unclear ownership",
+                "problems no one has clearly defined",
+              ].map((item) => (
+                <li key={item} className="text-foreground">
+                  {item}
+                </li>
+              ))}
+            </ul>
+            <p>Then we fix it in a way your team can actually run with.</p>
             <p className="text-foreground font-medium">
               No overcomplication. No unnecessary frameworks. Just clear, practical
-              improvements that stick.
+              improvements your team can actually run with.
             </p>
           </div>
         </motion.div>
