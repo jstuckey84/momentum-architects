@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
 const environments = [
-  "multi-team workflows with frequent handoffs",
-  "high-volume service or support environments",
-  "operations where consistency and execution matter",
-  "teams dealing with repeated follow-ups, delays, or rework",
+  "multi-team workflows with constant handoffs",
+  "high-volume operations or service environments",
+  "teams where execution depends on consistency and speed",
+  "organizations dealing with repeated follow-ups, delays, or rework",
 ];
 
 const WhereIFocus = () => {
@@ -25,8 +25,8 @@ const WhereIFocus = () => {
             <span className="text-gradient-brand">In Complex Environments.</span>
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-            This work is most valuable in environments where operations are fast-moving,
-            complex, and difficult to manage.
+            This work is most valuable in environments where things move fast—but don't
+            always run clean.
           </p>
 
           <p className="text-muted-foreground text-lg leading-relaxed mb-4">
@@ -42,13 +42,10 @@ const WhereIFocus = () => {
           </ul>
 
           <p className="text-muted-foreground text-lg leading-relaxed mb-2">
-            Whether you're running a service team, operations group, or scaling business,
-            the pattern is the same:
+            It's not always obvious what's wrong—but you can feel it in how much effort it
+            takes just to keep things moving.
           </p>
-          <p className="text-foreground text-lg font-medium leading-relaxed mb-2">
-            Work is happening—but it's not running cleanly.
-          </p>
-          <p className="text-muted-foreground text-lg leading-relaxed">
+          <p className="text-foreground text-lg font-medium leading-relaxed">
             That's what we fix.
           </p>
         </motion.div>
