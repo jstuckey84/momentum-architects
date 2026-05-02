@@ -4,7 +4,7 @@ import { Package, FileText, AlertTriangle, BarChart3 } from "lucide-react";
 const toolkits = [
   {
     icon: Package,
-    name: "Governance-in-a-Box™",
+    name: "Governance-in-a-Box",
     description: "Pre-built governance framework ready for immediate deployment. Policies, procedures, and board-ready documentation.",
   },
   {
