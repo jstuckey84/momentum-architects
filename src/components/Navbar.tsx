@@ -2,9 +2,25 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import logo from "@/assets/PD_symbol.png";
 import ThemeToggle from "@/components/ThemeToggle";
+import { useActiveSection } from "@/hooks/use-active-section";
+import { cn } from "@/lib/utils";
+
+const NAV_LINKS = [
+  { id: "what-we-do", label: "What We Do" },
+  { id: "packages", label: "Work With Us" },
+  { id: "how-i-work", label: "Approach" },
+  { id: "about", label: "About" },
+  { id: "contact", label: "Contact" },
+];
+
+const SECTION_IDS = NAV_LINKS.map((l) => l.id);
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const activeId = useActiveSection(SECTION_IDS);
+
+  const linkClass = (id: string, base: string, active: string) =>
+    cn(base, activeId === id && active);
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
@@ -15,9 +31,20 @@ const Navbar = () => {
         </a>
 
         <div className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
-          <a href="#packages" className="hover:text-foreground transition-colors">Packages</a>
-          <a href="#about" className="hover:text-foreground transition-colors">About</a>
-          <a href="#contact" className="hover:text-foreground transition-colors">Contact</a>
+          {NAV_LINKS.map((link) => (
+            <a
+              key={link.id}
+              href={`#${link.id}`}
+              aria-current={activeId === link.id ? "true" : undefined}
+              className={linkClass(
+                link.id,
+                "relative transition-colors hover:text-foreground after:absolute after:left-0 after:-bottom-1 after:h-px after:bg-primary after:transition-all after:duration-300 after:w-0",
+                "text-foreground after:w-full"
+              )}
+            >
+              {link.label}
+            </a>
+          ))}
           <ThemeToggle />
           <a
             href="mailto:hello@processdream.com"
@@ -34,9 +61,21 @@ const Navbar = () => {
 
       {open &&
         <div className="md:hidden border-t border-border px-6 py-4 flex flex-col gap-4 bg-background">
-          <a href="#packages" onClick={() => setOpen(false)} className="text-muted-foreground hover:text-foreground text-sm">Packages</a>
-          <a href="#about" onClick={() => setOpen(false)} className="text-muted-foreground hover:text-foreground text-sm">About</a>
-          <a href="#contact" onClick={() => setOpen(false)} className="text-muted-foreground hover:text-foreground text-sm">Contact</a>
+          {NAV_LINKS.map((link) => (
+            <a
+              key={link.id}
+              href={`#${link.id}`}
+              onClick={() => setOpen(false)}
+              aria-current={activeId === link.id ? "true" : undefined}
+              className={linkClass(
+                link.id,
+                "text-muted-foreground hover:text-foreground text-sm transition-colors",
+                "text-foreground font-medium"
+              )}
+            >
+              {link.label}
+            </a>
+          ))}
           <div className="flex items-center gap-2 text-muted-foreground text-sm">
             <span>Theme</span>
             <ThemeToggle />
