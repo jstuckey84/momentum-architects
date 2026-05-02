@@ -18,21 +18,28 @@ const About = () => {
             Execution Over Theory.<br />
             <span className="text-gradient-brand">Structure Over Noise.</span>
           </h2>
-          <div className="max-w-2xl mx-auto space-y-6">
+          <div className="max-w-2xl mx-auto space-y-6 text-left md:text-center">
             <p className="text-muted-foreground text-lg leading-relaxed">
-              We're not consultants who hand you a deck and disappear. We're operators who've built, 
-              scaled, and restructured organizations from the inside out.
+              This isn't traditional consulting.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              Our frameworks are born from real operational challenges — not MBA textbooks. 
-              Every engagement is designed to leave your organization stronger, faster, and more resilient.
+              I've spent years working inside organizations—identifying where processes break
+              down, where risk shows up, and why teams struggle to execute.
+            </p>
+            <p className="text-muted-foreground text-lg leading-relaxed">
+              Process Dream Company was built to bring that same level of clarity to
+              businesses without the bureaucracy.
+            </p>
+            <p className="text-muted-foreground text-lg leading-relaxed">
+              Every engagement is designed to leave your operations clearer, faster, more
+              structured, and easier to manage.
             </p>
           </div>
 
           <div className="mt-16 grid grid-cols-2 gap-8 max-w-md mx-auto border-t border-brand pt-16">
             {[
               { value: "19+", label: "Years of Experience" },
-              { value: "$2.5M+", label: "In Cost Savings" },
+              { value: "$2.5M+", label: "In Cost Savings Identified" },
             ].map((stat) => (
               <div key={stat.label}>
                 <p className="text-3xl md:text-4xl font-bold text-gradient-brand mb-2">{stat.value}</p>

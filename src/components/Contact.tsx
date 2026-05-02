@@ -70,7 +70,8 @@ const Contact = () => {
             <span className="text-gradient-brand">Conversation.</span>
           </h2>
           <p className="text-muted-foreground max-w-lg mx-auto leading-relaxed">
-            Tell us about your operational challenges. We'll respond within one business day.
+            What's not working in your operations right now? Tell me a little about what
+            you're dealing with, and we'll take it from there.
           </p>
         </motion.div>
 
@@ -139,7 +140,7 @@ const Contact = () => {
             disabled={submitting}
             className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 font-semibold tracking-wide text-sm uppercase hover:opacity-90 transition-opacity rounded-sm disabled:opacity-50"
           >
-            {submitting ? "Sending…" : "Send Message"}
+            {submitting ? "Sending…" : "Start the Conversation"}
             <Send className="w-4 h-4" />
           </button>
         </motion.form>
