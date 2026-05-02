@@ -13,7 +13,7 @@ const packages = [
       "A prioritized plan to fix what matters most",
     ],
     bestFor:
-      "Financial operations teams and call centers that are constantly putting out fires and struggling to pinpoint where things are breaking down.",
+      "Teams that are constantly putting out fires, dealing with repeated follow-ups, and struggling to pinpoint where things are breaking down.",
     note: "Most clients start here before moving into deeper work.",
   },
   {
