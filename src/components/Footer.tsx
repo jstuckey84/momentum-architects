@@ -8,9 +8,12 @@ const Footer = () => {
           <img
             src={logo}
             alt="Process Dream Company"
-            className="h-40 md:h-52 w-auto"
+            className="h-72 md:h-96 w-auto"
           />
-          <div className="flex gap-8 text-sm text-muted-foreground">
+          <p className="text-muted-foreground text-sm tracking-[0.2em] uppercase -mt-2">
+            Operational Advisory & Execution
+          </p>
+          <div className="flex gap-8 text-sm text-muted-foreground pt-2">
             <a href="#packages" className="hover:text-primary transition-colors">
               Packages
             </a>
