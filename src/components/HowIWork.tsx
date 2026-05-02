@@ -23,6 +23,10 @@ const HowIWork = () => {
               I start by understanding how work actually gets done—not how it's supposed to
               work on paper.
             </p>
+            <p>
+              I'm not looking for what should be happening—I'm looking for where things
+              are quietly breaking down.
+            </p>
             <p>That's where the real issues show up:</p>
             <ul className="space-y-3 border-l-2 border-brand-strong pl-6">
               {[

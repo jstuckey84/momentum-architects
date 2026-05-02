@@ -33,7 +33,7 @@ const WhatWeDo = () => {
           </h2>
 
           <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
-            <p>Most operational problems aren't obvious. They show up as:</p>
+            <p>Most operational problems don't show up as one big issue. They show up as:</p>
 
             <ul className="space-y-3 border-l-2 border-brand-strong pl-6">
               {symptoms.map((s) => (
@@ -43,7 +43,7 @@ const WhatWeDo = () => {
               ))}
             </ul>
 
-            <p>Underneath that, there are usually a few core issues:</p>
+            <p>Underneath that, there are usually a few core problems:</p>
 
             <ul className="space-y-3 border-l-2 border-brand-strong pl-6">
               {issues.map((issue) => (

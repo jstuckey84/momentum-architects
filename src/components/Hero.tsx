@@ -32,16 +32,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-12 leading-relaxed">
 
-          When your team is stuck in follow-ups, rework, and unclear ownership, it's not a people problem—it's a process problem. I help teams identify where work breaks down, where operational risk builds, and how to fix it in a way that actually works.
-        </motion.p>
-
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="text-muted-foreground/80 text-sm italic max-w-xl mx-auto mt-8"
-        >
-          Built from real-world experience inside complex operational environments — not theory.
+          When your team is stuck in follow-ups, rework, and unclear ownership, it's not a people problem—it's a process problem. I help you see where work actually gets stuck, handed off too many times, or quietly breaks down—and fix it in a way that actually works.
         </motion.p>
 
         <motion.div
@@ -61,9 +52,27 @@ const Hero = () => {
             href="#contact"
             className="inline-flex items-center gap-2 border border-brand-strong text-foreground px-8 py-4 font-semibold tracking-wide text-sm uppercase hover:bg-secondary transition-colors rounded-sm">
 
-            Schedule a Conversation
+            Book a 20-minute intro call
           </a>
         </motion.div>
+
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.5 }}
+          className="text-muted-foreground text-sm max-w-xl mx-auto mt-6"
+        >
+          20 minutes. No prep needed. We'll quickly pinpoint what's breaking and whether it's worth fixing together.
+        </motion.p>
+
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+          className="text-muted-foreground/80 text-sm italic max-w-xl mx-auto mt-8"
+        >
+          Built from real-world experience inside complex operational environments — not theory.
+        </motion.p>
       </div>
 
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
