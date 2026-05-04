@@ -1,4 +1,4 @@
-import logo from "@/assets/PDC_Logo_Stacked.png";
+import logo from "@/assets/PD_symbol.png";
 
 const Footer = () => {
   return (
@@ -8,11 +8,16 @@ const Footer = () => {
           <img
             src={logo}
             alt="Process Dream Company"
-            className="h-72 md:h-96 w-auto"
+            className="h-24 md:h-32 w-auto"
           />
-          <p className="text-muted-foreground text-sm tracking-[0.2em] uppercase -mt-2">
-            Operational Advisory & Execution
-          </p>
+          <div>
+            <p className="text-foreground font-bold tracking-tight text-2xl">
+              PROCESS DREAM
+            </p>
+            <p className="text-muted-foreground text-sm mt-1">
+              Operational Advisory & Execution
+            </p>
+          </div>
           <div className="flex gap-8 text-sm text-muted-foreground pt-2">
             <a href="#packages" className="hover:text-primary transition-colors">
               Packages
