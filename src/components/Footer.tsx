@@ -8,7 +8,7 @@ const Footer = () => {
           <img
             src={logo}
             alt="Process Dream Company"
-            className="h-40 sm:h-52 md:h-64 lg:h-72 w-auto -mb-4 md:-mb-6"
+            className="h-20 sm:h-24 md:h-28 lg:h-32 w-auto mb-2"
           />
           <div>
             <p className="text-foreground font-bold tracking-tight text-3xl md:text-4xl">
