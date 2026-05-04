@@ -4,11 +4,11 @@ const Footer = () => {
   return (
     <footer className="border-t border-border py-16 px-6">
       <div className="max-w-6xl mx-auto space-y-12">
-        <div className="flex flex-col items-center text-center gap-6">
+        <div className="flex flex-col items-center text-center gap-1">
           <img
             src={logo}
             alt="Process Dream Company"
-            className="h-40 sm:h-52 md:h-64 lg:h-72 w-auto"
+            className="h-40 sm:h-52 md:h-64 lg:h-72 w-auto -mb-4 md:-mb-6"
           />
           <div>
             <p className="text-foreground font-bold tracking-tight text-3xl md:text-4xl">
