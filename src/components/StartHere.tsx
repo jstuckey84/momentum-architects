@@ -18,14 +18,14 @@ const StartHere = () => {
           Not sure where to start?
         </h3>
         <p className="text-muted-foreground leading-relaxed mb-8 max-w-xl mx-auto">
-          Most teams begin with a Clarity Diagnostic to quickly identify what's actually
-          slowing things down.
+          Most teams begin with a Visibility Assessment to quickly see where execution is
+          breaking down and what to fix first.
         </p>
         <a
           href="#packages"
           className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 font-semibold tracking-wide text-sm uppercase hover:opacity-90 transition-opacity rounded-sm"
         >
-          Start with a Clarity Diagnostic
+          Start with a Visibility Assessment
           <ArrowRight className="w-4 h-4" />
         </a>
       </motion.div>

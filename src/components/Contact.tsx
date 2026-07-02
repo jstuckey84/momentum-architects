@@ -70,9 +70,9 @@ const Contact = () => {
             <span className="text-gradient-brand">Conversation.</span>
           </h2>
           <p className="text-muted-foreground max-w-lg mx-auto leading-relaxed">
-            Most clients start with a Clarity Diagnostic to quickly identify what's not
-            working and where to focus first. If something in your operations feels off,
-            tell me what's going on — we'll figure out the next step.
+            Most clients start with a Visibility Assessment to see where execution is
+            breaking down and where to focus first. If something in your operations feels
+            off, tell me what's going on — we'll figure out the next step.
           </p>
         </motion.div>
 

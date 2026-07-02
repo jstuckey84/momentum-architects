@@ -39,7 +39,8 @@ const WhatMakesDifferent = () => {
           </ul>
 
           <p className="text-foreground font-medium text-lg">
-            This is about clarity you can act on — not theory that sits on a shelf.
+            Execution over theory. Structure over noise. Real improvements your team can
+            act on — not reports that sit on a shelf.
           </p>
         </motion.div>
       </div>
