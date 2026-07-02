@@ -21,19 +21,20 @@ const Hero = () => {
             Operations Advisory
           </p>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[0.95] mb-8">
-            Turn Chaos<br />
-            <span className="text-gradient-brand">Into Clarity.</span>
+            Growth Shouldn't<br />
+            <span className="text-gradient-brand">Create Chaos.</span>
           </h1>
         </motion.div>
 
-        <motion.p
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-          className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-12 leading-relaxed">
+          className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-12 leading-relaxed space-y-5">
 
-          When your team is stuck in follow-ups, rework, and unclear ownership, it's not a people problem—it's a process problem. I help you see where work actually gets stuck, handed off too many times, or quietly breaks down—and fix it in a way that actually works.
-        </motion.p>
+          <p>When your business grows faster than your systems, execution starts to suffer. Work gets stuck, follow-ups multiply, decisions wait on the same people, and the same problems keep coming back.</p>
+          <p>Process Dream Company helps growing businesses identify operational friction, build scalable processes, and create the structure needed to grow with confidence.</p>
+        </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -45,7 +46,7 @@ const Hero = () => {
             href="#packages"
             className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 font-semibold tracking-wide text-sm uppercase hover:opacity-90 transition-opacity rounded-sm">
 
-            Start with a Clarity Diagnostic
+            Start with a Visibility Assessment
             <ArrowRight className="w-4 h-4" />
           </a>
           <a
@@ -62,7 +63,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.5 }}
           className="text-muted-foreground text-sm max-w-xl mx-auto mt-6"
         >
-          20 minutes. No prep needed. We'll quickly pinpoint what's breaking and whether it's worth fixing together.
+          20 minutes. No prep needed. We'll quickly determine what's slowing the business down and whether it's worth solving together.
         </motion.p>
 
         <motion.p

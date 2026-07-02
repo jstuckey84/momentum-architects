@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import WhereIFocus from "@/components/WhereIFocus";
+import GrowthWarningSigns from "@/components/GrowthWarningSigns";
 import WhatWeDo from "@/components/WhatWeDo";
 import StartHere from "@/components/StartHere";
 import Packages from "@/components/Packages";
@@ -18,7 +18,7 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
       <Hero />
-      <WhereIFocus />
+      <GrowthWarningSigns />
       <WhatWeDo />
       <StartHere />
       <Packages />
