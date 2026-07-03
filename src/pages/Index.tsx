@@ -8,7 +8,7 @@ import HowIWork from "@/components/HowIWork";
 import WhatMakesDifferent from "@/components/WhatMakesDifferent";
 import About from "@/components/About";
 import Outcomes from "@/components/Outcomes";
-import Toolkits from "@/components/Toolkits";
+import ResultsThatMatter from "@/components/ResultsThatMatter";
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -26,7 +26,7 @@ const Index = () => {
       <WhatMakesDifferent />
       <About />
       <Outcomes />
-      <Toolkits />
+      <ResultsThatMatter />
       <FAQ />
       <Contact />
       <Footer />
