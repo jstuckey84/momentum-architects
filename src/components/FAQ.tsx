@@ -61,11 +61,11 @@ const FAQ = () => {
           className="text-center mb-16"
         >
           <p className="text-primary tracking-[0.3em] uppercase text-sm font-medium mb-4">
-            FAQ
+            What Founders Ask
           </p>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
-            Common<br />
-            <span className="text-gradient-brand">Questions.</span>
+            Real Questions.<br />
+            <span className="text-gradient-brand">Straight Answers.</span>
           </h2>
         </motion.div>
 
