@@ -8,34 +8,44 @@ import {
 
 const faqs = [
   {
-    question: "How long does a typical engagement last?",
+    question: "My business is growing, but everything still seems to depend on me. Is that normal?",
     answer:
-      "It depends on the package. The Clarity Diagnostic™ runs 2–4 weeks, while our operating system builds can span 3–6 months. Every engagement starts with a scoping call so there are no surprises.",
+      "It's common, but it's not sustainable. Growth shouldn't create chaos. When the business depends on a few key people to make decisions, clear blockers, or keep projects moving, you hit a ceiling fast. The real issue usually isn't talent — it's that the underlying structure hasn't caught up to the complexity. We fix what's breaking so the business can scale without burning out the people who built it.",
   },
   {
-    question: "Do you work with companies of all sizes?",
+    question: "How do I know if operational friction is slowing us down?",
     answer:
-      "We primarily serve mid-market companies and growth-stage businesses — typically teams of 20 to 500. If you're a smaller team, The Small Business Operating System™ was built specifically for you.",
+      "If work keeps stalling at the same handoffs, follow-ups are multiplying, and decisions wait on the same people, friction is already costing you speed and capacity. It's not a people problem. It's a process problem. We start with a Visibility Assessment to map exactly where execution breaks down — so you see the gaps before you commit to a larger build.",
   },
   {
-    question: "What industries do you specialize in?",
+    question: "What types of organizations benefit most from this work?",
     answer:
-      "Our roots are in manufacturing and logistics, but our frameworks are industry-agnostic. We've delivered results across healthcare, professional services, technology, and consumer goods.",
+      "Growth-stage companies and mid-market organizations feeling the strain of scale — typically teams from 20 to 500. If you're adding headcount but output isn't keeping pace, or if leadership is still the bottleneck for day-to-day decisions, you're in the right place. We work with founders and operators who want structure over noise.",
   },
   {
-    question: "How is Process Dream different from traditional consulting firms?",
+    question: "How is Process Dream Company different from traditional consulting firms?",
     answer:
-      "We don't deliver slide decks and walk away. Every engagement produces actionable deliverables — governance architectures, SOPs, playbooks — and we stay involved through implementation to ensure adoption.",
+      "We don't deliver slide decks and walk away. Execution over theory. We build operational infrastructure — governance, workflows, playbooks — and stay involved through implementation until it's actually adopted. Our goal is to make ourselves unnecessary, not permanent.",
   },
   {
-    question: "What does pricing look like?",
+    question: "Will this create more work for my team?",
     answer:
-      "Each engagement is scoped and priced based on complexity and duration. We offer fixed-fee packages so you always know the investment upfront. Reach out and we'll provide a tailored proposal within 48 hours.",
+      "Short term, there is involvement. Long term, your team gets time back. Most operational drag comes from unclear ownership, repeated rework, and constant status-checking. We reduce that burden by building clear structure, not adding meetings and reports. When the process works, the work flows.",
   },
   {
-    question: "Can you work with our existing team and tools?",
+    question: "What does an engagement typically cost?",
     answer:
-      "Absolutely. We integrate with your current workflows, tech stack, and team structure. Our goal is to strengthen what you have — not replace it.",
+      "Each engagement is scoped and priced based on complexity and what you're solving for. We offer fixed-fee packages — from the Visibility Assessment at $1,500+ to full operating system builds — so you always know the investment upfront. No hourly guessing. Reach out and we'll provide a tailored proposal within 48 hours.",
+  },
+  {
+    question: "Do you replace our existing systems or software?",
+    answer:
+      "No. We integrate with what you already have. Our job is to strengthen your current workflows, tech stack, and team structure — not rip everything out and start over. Fix what's breaking, keep what's working.",
+  },
+  {
+    question: "Are we too small for this kind of work?",
+    answer:
+      "If you're feeling the pain of growth, you're not too small. Early investment in operational structure prevents much bigger problems at the next stage. We scale our approach to match where you are — from a focused Visibility Assessment for lean teams to full infrastructure builds for complex organizations.",
   },
 ];
 
@@ -51,11 +61,11 @@ const FAQ = () => {
           className="text-center mb-16"
         >
           <p className="text-primary tracking-[0.3em] uppercase text-sm font-medium mb-4">
-            FAQ
+            What Founders Ask
           </p>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
-            Common<br />
-            <span className="text-gradient-brand">Questions.</span>
+            Real Questions.<br />
+            <span className="text-gradient-brand">Straight Answers.</span>
           </h2>
         </motion.div>
 
