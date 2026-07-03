@@ -26,7 +26,7 @@ const Index = () => {
       <WhatMakesDifferent />
       <About />
       <Outcomes />
-      <Toolkits />
+      <ResultsThatMatter />
       <FAQ />
       <Contact />
       <Footer />
