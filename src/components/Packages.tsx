@@ -13,7 +13,6 @@ const packages = [
     ],
     bestFor:
       "Leaders who know something is slowing the business down but are not sure where the real issue starts.",
-    investment: "Starting at $1,500",
   },
   {
     icon: Settings,
@@ -27,7 +26,6 @@ const packages = [
     ],
     bestFor:
       "Businesses relying too heavily on tribal knowledge, repeated explanations, or inconsistent execution.",
-    investment: "Typical engagements $5,000–$10,000",
   },
   {
     icon: TrendingUp,
@@ -41,7 +39,6 @@ const packages = [
     ],
     bestFor:
       "Organizations adding people, locations, volume, or complexity and needing stronger visibility and governance.",
-    investment: "Typical engagements $15,000–$40,000",
   },
   {
     icon: Handshake,
@@ -55,7 +52,6 @@ const packages = [
     ],
     bestFor:
       "Leaders who need a trusted partner to help solve operational problems, improve execution, and stay ahead of growth-related complexity.",
-    investment: "Starting at $1,500/month",
   },
 ];
 
