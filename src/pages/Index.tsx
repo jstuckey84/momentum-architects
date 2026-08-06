@@ -28,6 +28,7 @@ const Index = () => {
       <About />
       <Outcomes />
       <ResultsThatMatter />
+      <Investment />
       <FAQ />
       <Contact />
       <Footer />
