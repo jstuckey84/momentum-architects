@@ -1,4 +1,4 @@
-import logo from "@/assets/PD_symbol.png";
+import logoAsset from "@/assets/PD_symbol.png.asset.json";
 
 const Footer = () => {
   return (
