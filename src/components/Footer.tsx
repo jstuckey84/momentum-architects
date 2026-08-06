@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto space-y-12">
         <div className="flex flex-col items-center text-center gap-1">
           <img
-            src={logo}
+            src={logoAsset.url}
             alt="Process Dream Company"
             className="h-20 sm:h-24 md:h-28 lg:h-32 w-auto mb-2"
           />
