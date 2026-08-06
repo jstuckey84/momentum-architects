@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/PD_symbol.png";
+import logoAsset from "@/assets/PD_symbol.png.asset.json";
 import ThemeToggle from "@/components/ThemeToggle";
 import { useActiveSection } from "@/hooks/use-active-section";
 import { cn } from "@/lib/utils";
