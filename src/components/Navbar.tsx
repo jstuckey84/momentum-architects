@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/PD_symbol.png";
+import logoAsset from "@/assets/PD_symbol.png.asset.json";
 import ThemeToggle from "@/components/ThemeToggle";
 import { useActiveSection } from "@/hooks/use-active-section";
 import { cn } from "@/lib/utils";
@@ -27,7 +27,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
         <a href="#" className="flex items-center gap-3">
-          <img src={logo} alt="Process Dream Company" className="h-8 w-auto" />
+          <img src={logoAsset.url} alt="Process Dream Company" className="h-8 w-auto" />
           <span className="text-foreground font-bold tracking-tight text-lg">PROCESS DREAM COMPANY</span>
         </a>
 
