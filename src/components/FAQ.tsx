@@ -33,9 +33,9 @@ const faqs = [
       "Short term, there is involvement. Long term, your team gets time back. Most operational drag comes from unclear ownership, repeated rework, and constant status-checking. We reduce that burden by building clear structure, not adding meetings and reports. When the process works, the work flows.",
   },
   {
-    question: "What does an engagement typically cost?",
+    question: "What does an engagement typically require as an investment?",
     answer:
-      "Each engagement is scoped and priced based on complexity and what you're solving for. We offer fixed-fee packages — from the Visibility Assessment at $1,500+ to full operating system builds — so you always know the investment upfront. No hourly guessing. Reach out and we'll provide a tailored proposal within 48 hours.",
+      "Each engagement is scoped and priced based on complexity and what you're solving for. Every engagement is fixed-fee, so you always know the investment upfront — no hourly guessing. See the Investment section above for typical ranges, then reach out and we'll provide a tailored proposal within 48 hours.",
   },
   {
     question: "Do you replace our existing systems or software?",

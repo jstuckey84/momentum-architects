@@ -9,6 +9,7 @@ import WhatMakesDifferent from "@/components/WhatMakesDifferent";
 import About from "@/components/About";
 import Outcomes from "@/components/Outcomes";
 import ResultsThatMatter from "@/components/ResultsThatMatter";
+import Investment from "@/components/Investment";
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -27,6 +28,7 @@ const Index = () => {
       <About />
       <Outcomes />
       <ResultsThatMatter />
+      <Investment />
       <FAQ />
       <Contact />
       <Footer />

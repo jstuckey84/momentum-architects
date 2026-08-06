@@ -13,7 +13,6 @@ const packages = [
     ],
     bestFor:
       "Leaders who know something is slowing the business down but are not sure where the real issue starts.",
-    investment: "Starting at $1,500",
   },
   {
     icon: Settings,
@@ -27,7 +26,6 @@ const packages = [
     ],
     bestFor:
       "Businesses relying too heavily on tribal knowledge, repeated explanations, or inconsistent execution.",
-    investment: "Typical engagements $5,000–$10,000",
   },
   {
     icon: TrendingUp,
@@ -41,7 +39,6 @@ const packages = [
     ],
     bestFor:
       "Organizations adding people, locations, volume, or complexity and needing stronger visibility and governance.",
-    investment: "Typical engagements $15,000–$40,000",
   },
   {
     icon: Handshake,
@@ -55,7 +52,6 @@ const packages = [
     ],
     bestFor:
       "Leaders who need a trusted partner to help solve operational problems, improve execution, and stay ahead of growth-related complexity.",
-    investment: "Starting at $1,500/month",
   },
 ];
 
@@ -102,7 +98,13 @@ const Packages = () => {
             >
               <pkg.icon className="w-6 h-6 text-primary mb-6" />
               <h3 className="text-xl font-bold mb-3 tracking-tight">{pkg.name}</h3>
-              <p className="text-muted-foreground leading-relaxed mb-6">{pkg.tagline}</p>
+              <p className="text-muted-foreground leading-relaxed mb-2">{pkg.tagline}</p>
+              <a
+                href="#investment"
+                className="text-sm text-primary font-medium hover:underline underline-offset-4 mb-6 inline-block"
+              >
+                View typical investment
+              </a>
 
               <ul className="space-y-2 mb-6 flex-1">
                 {pkg.deliverables.map((d) => (
@@ -115,23 +117,13 @@ const Packages = () => {
                 ))}
               </ul>
 
-              <div className="border-t border-brand pt-4 space-y-3">
-                <div>
-                  <p className="text-xs text-primary font-medium tracking-wide uppercase mb-1">
-                    Best for
-                  </p>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
-                    {pkg.bestFor}
-                  </p>
-                </div>
-                <div>
-                  <p className="text-xs text-primary font-medium tracking-wide uppercase mb-1">
-                    Investment
-                  </p>
-                  <p className="text-sm text-foreground leading-relaxed">
-                    {pkg.investment}
-                  </p>
-                </div>
+              <div className="border-t border-brand pt-4">
+                <p className="text-xs text-primary font-medium tracking-wide uppercase mb-1">
+                  Best for
+                </p>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  {pkg.bestFor}
+                </p>
               </div>
             </motion.div>
           ))}
